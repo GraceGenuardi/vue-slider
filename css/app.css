@@ -19,15 +19,15 @@
   }
   
   .carosello__arrow.arrow-left {
-    left: 330px;
+    left: 10px;
   }
   
   .carosello__arrow.arrow-right {
-    right: 330px;
+    right: 10px;
   }
 
 
-  
+
   /***SLIDE RULES***/
   .slide img {
     width: 100%;

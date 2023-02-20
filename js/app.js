@@ -4,35 +4,42 @@ const app = Vue.createApp({
         currentSlide: 0,
         images: [
           {
-            title: "First Image",
-            text: "This is the first image",
+            title: "Daenerys Targaryen",
+            text: "blabla",
             image: "./img/image1.jpg"
           },
           {
-            title: "Second Image",
-            text: "This is the second image",
+            title: "Jon Snow",
+            text: "blabla",
             image: "./img/image2.jpg"
           },
           {
-            title: "Third Image",
-            text: "This is the third image",
+            title: "Cersei Lannister",
+            text: "blabla",
             image: "./img/image3.jpg"
           },
           {
-            title: "Third Image",
-            text: "This is the third image",
+            title: "Tyrion Lannister",
+            text: "blabla",
             image: "./img/image4.jpg"
           },
           {
-            title: "Third Image",
-            text: "This is the third image",
+            title: "The Night King",
+            text: "blabla",
             image: "./img/image5.jpg"
           }
 
         ]
       }
     },
-   
+    methods: {
+        prevSlide() {
+          this.currentSlide = (this.currentSlide - 1 + this.images.length) % this.images.length;
+        },
+        nextSlide() {
+          this.currentSlide = (this.currentSlide + 1) % this.images.length;
+        }
+      }
   });
 
   app.mount('#slides-container');

@@ -30,16 +30,20 @@
                 <h2>{{ image.title }}</h2>
                 <p>{{ image.text }}</p>
               </div>
-            </div>
 
-     <!-- FRECCE -->
+              <!-- FRECCE -->
             <div class="carosello__arrow arrow-left" @click="prevSlide">
-              <i class="fa-solid fa-angles-left"></i>
+                <i class="fa-solid fa-angles-left"></i>
+              </div>
+  
+              <div class="carosello__arrow arrow-right" @click="nextSlide">
+                <i class="fa-solid fa-angles-right"></i>
+              </div>
+
+              
             </div>
 
-            <div class="carosello__arrow arrow-right" @click="nextSlide">
-              <i class="fa-solid fa-angles-right"></i>
-            </div>
+     
 
 
           </div>
